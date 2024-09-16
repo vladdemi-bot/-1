@@ -1,0 +1,40 @@
+3. завдання
+ let number = prompt("Введіть число:");
+
+while (number >= 0) {
+    alert(number);
+    number--;
+}
+
+alert("Час вийшов!");
+1. задача
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+let guess = null;
+
+while (guess !== randomNumber) {
+    guess = parseInt(prompt("Вгадайте число від 1 до 100:"));
+
+    if (guess < randomNumber) {
+        alert("Занадто мало! Спробуйте ще раз.");
+    } else if (guess > randomNumber) {
+        alert("Занадто багато! Спробуйте ще раз.");
+    } else if (guess === randomNumber) {
+        alert("Вітаємо! Ви вгадали число!");
+    } else {
+        alert("Будь ласка, введіть дійсне число.");
+    }
+}
+2. задача
+let userNumber = parseInt(prompt("Введіть число:"));
+
+for (let i = 1; i <= userNumber; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
